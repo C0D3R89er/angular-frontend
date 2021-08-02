@@ -1,0 +1,38 @@
+:host >>> textarea{
+    display: block;
+    width: 200px;
+    height: 100px;
+}
+
+:host >>> p{
+    margin: 20px auto;
+    font-size: 16px;
+}
+
+:host >>> input[type=text]{
+    position: relative;
+    min-width: 200px;
+    right: 0;  
+}
+
+:host >>> .list-item span{
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+:host >>> td{
+    vertical-align: text-top;
+    margin: 10px;
+}
+:host >>> #button{
+    padding-left: 160px;
+}
+:host >>> button{
+    text-align: center;
+    background-color: transparent;
+    color: darkgreen;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 10px;
+}

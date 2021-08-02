@@ -1,0 +1,27 @@
+<div>
+  <table>
+    <tr>
+      <td>Enter name:</td>
+      <td><input type="text" [(ngModel)]="name"></td>
+    </tr>
+    <br>
+    <tr>
+      <td>Enter details:</td> <td><textarea [(ngModel)]="details"></textarea></td>
+    </tr>
+    <br>
+    <tr>
+      <td>Enter contact:</td> <td><input type="text" [(ngModel)]="contact"></td>
+    </tr>
+  <br>
+  <tr>
+    <td></td>
+  <td id="button"><button (click)="addTodo()">Add</button></td>
+  </tr>
+  <p>{{error}}</p>
+  </table>
+  
+
+  <ul id="list">
+    <li #abc class="list-item" *ngFor="let x of todos">{{x.name}} - {{x.contact}}<input #xyz type="checkbox" [disabled]="sent" (click)="updateTodo(xyz, abc)" [(ngModel)]="senttodo"><span (click)="removeTodo(x)">&times;</span></li>
+  </ul>
+</div>
